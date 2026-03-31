@@ -1,0 +1,7 @@
+com/example/student/StudentApplication.class
+com/example/student/dto/SignupRequest.class
+com/example/student/repository/StudentRepository.class
+com/example/student/entity/Student.class
+com/example/student/controller/AuthController.class
+com/example/student/dto/LoginRequest.class
+com/example/student/service/AuthService.class
