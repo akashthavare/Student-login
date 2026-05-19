@@ -1,8 +1,7 @@
-# Use Java base image
-FROM eclipse-temurin:17-jdk-jammy
+FROM eclipse-temurin:17
 
-# Copy jar file
 COPY target/student-auth-1.0.jar app.jar
 
-# Run app
+EXPOSE 8080
+
 ENTRYPOINT ["java","-jar","/app.jar"]
