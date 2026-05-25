@@ -11,7 +11,8 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-                git 'https://github.com/akashthavare/Student-login.git'
+                git branch: 'main',
+                url: 'https://github.com/akashthavare/Student-login.git'
             }
         }
 
