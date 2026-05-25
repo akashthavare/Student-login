@@ -50,11 +50,11 @@ pipeline {
             steps {
 
                 sh '''
-                sed -i "s|akashthavare18/student-auth:latest|$IMAGE_NAME:$TAG|g" deployment.yaml
+                sed -i "s|akashthavare18/student-auth:latest|$IMAGE_NAME:$TAG|g" student-app-deployment.yaml
 
-                kubectl apply -f deployment.yaml
+                kubectl apply -f student-app-deployment.yaml
 
-                kubectl apply -f service.yaml
+                kubectl apply -f student-app-service.yaml
                 '''
             }
         }
