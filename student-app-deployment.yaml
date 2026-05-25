@@ -19,7 +19,7 @@ spec:
       containers:
       - name: student-app
 
-        image: akashthavare18/student-auth:v2
+        image: akashthavare18/student-auth:latest
 
         ports:
         - containerPort: 8080
